@@ -1,0 +1,7 @@
+.caption{font-size:clamp(32px,var(--caption-size,4.5vw),96px)}
+.mode-options{display:flex;gap:8px;width:100%}
+.option-menu{width:248px;max-width:calc(100vw - 40px);max-height:calc(var(--visible-height,100dvh) - 170px);overflow-y:auto;overscroll-behavior:contain}
+.option-menu label,.menu-note{width:100%}
+.option-menu .menu-note{line-height:1.6;color:var(--navy)}
+.status{font-variant-numeric:tabular-nums}
+@media(max-width:600px){.caption{font-size:var(--phone-caption-size,32px)}}

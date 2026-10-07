@@ -1,0 +1,13 @@
+{
+  "name": "changing-tides-demo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "preview": "node scripts/serve.mjs"
+  },
+  "dependencies": {"@elevenlabs/client": "1.27.0"},
+  "devDependencies": {"esbuild": "0.28.2"}
+}

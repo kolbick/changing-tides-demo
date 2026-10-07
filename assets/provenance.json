@@ -1,0 +1,44 @@
+{
+  "reference": "https://changingtidesobx.com/",
+  "assets": [
+    {
+      "file": "assets/open-sans-regular.woff2",
+      "source": "https://cdn-cebce.nitrocdn.com/JiTHtvoVxYVkOgMQCMJrHgRoHgEVUOuN/assets/static/source/rev-ab175c8/changingtidesobx.com/wp-content/uploads/fusion-gfonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2",
+      "usage": "Exact normal Latin font from official site"
+    },
+    {
+      "file": "assets/open-sans-bold.woff2",
+      "source": "https://cdn-cebce.nitrocdn.com/JiTHtvoVxYVkOgMQCMJrHgRoHgEVUOuN/assets/static/source/rev-ab175c8/changingtidesobx.com/wp-content/uploads/fusion-gfonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2",
+      "usage": "Exact normal Latin font from official site"
+    },
+    {
+      "file": "assets/yellowtail.woff2",
+      "source": "https://cdn-cebce.nitrocdn.com/JiTHtvoVxYVkOgMQCMJrHgRoHgEVUOuN/assets/static/source/rev-ab175c8/changingtidesobx.com/wp-content/uploads/fusion-gfonts/OZpGg_pnoDtINPfRIlLohlvHwQ.woff2",
+      "usage": "Exact normal Latin font from official site"
+    },
+    {
+      "file": "assets/josefin-sans-bold.woff2",
+      "source": "https://fonts.gstatic.com/s/josefinsans/v34/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_N_XXME.ttf",
+      "usage": "Official Google Fonts Latin font matching Josefin Sans used in Changing Tides site headings"
+    },
+    {
+      "file": "assets/changing-tides-logo.jpg",
+      "source": "User supplied Photo 1.jpg",
+      "usage": "Shipping logo copy with origin metadata; pixels unchanged"
+    },
+    {
+      "file": "assets/changing-tides-coast-daylight-landscape.jpg",
+      "source": "AI-generated using the built-in image generation tool, 2026-10-07; user-supplied Changing Tides logo is the composition reference",
+      "usage": "Bright photorealistic logo interpretation for the landscape interpreter background; illustrative coastal scene, not a photograph of an actual location",
+      "revision": "User requested a lighter image; scene lighting was edited while preserving the composition",
+      "encoding": "JPEG quality 86; exact final edit prompt embedded in the JPEG comment"
+    },
+    {
+      "file": "assets/changing-tides-coast-daylight-portrait.jpg",
+      "source": "AI-generated using the built-in image generation tool, 2026-10-07; user-supplied Changing Tides logo is the composition reference",
+      "usage": "Bright photorealistic logo interpretation for the portrait interpreter background; illustrative coastal scene, not a photograph of an actual location",
+      "revision": "User requested a lighter image; scene lighting was edited while preserving the composition",
+      "encoding": "JPEG quality 86; exact final edit prompt embedded in the JPEG comment"
+    }
+  ]
+}

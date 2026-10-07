@@ -1,0 +1,13 @@
+import {build} from 'esbuild';
+import {readFile,writeFile,mkdir,cp,rm} from 'node:fs/promises';
+await rm('dist',{recursive:true,force:true});
+await mkdir('dist',{recursive:true});
+const result = await build({entryPoints:['src/app.js'],bundle:true,format:'esm',platform:'browser',target:'es2022',minify:true,legalComments:'external',outdir:'dist',entryNames:'demo-[hash]',metafile:true});
+const script = Object.keys(result.metafile.outputs).find(name => name.endsWith('.js')).replace(/^dist\//,'');
+const html = (await readFile('index.html','utf8')).replace('src="./src/app.js"',`src="./${script}"`);
+await writeFile('dist/index.html',html);
+await cp('assets','dist/assets',{recursive:true});
+await cp('src/coastal.css','dist/coastal.css');
+await cp('src/demo.css','dist/demo.css');
+await writeFile('dist/.nojekyll','');
+console.log(`Built the CT demo with ${script}.`);

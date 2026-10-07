@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b4680">
+  <meta name="description" content="Try the Changing Tides English and Spanish voice interpreter.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Changing Tides · Interpreter Demo</title>
+  <link rel="icon" href="./assets/changing-tides-logo.jpg">
+  <link rel="stylesheet" href="./coastal.css">
+  <link rel="stylesheet" href="./demo.css">
+</head>
+<body>
+  <section id="widget" role="region" aria-label="Changing Tides interpreter" hidden>
+    <div id="captions" class="word-stage" role="log" aria-live="polite" aria-label="Translated words">
+      <p class="idle-words">English ↔ Español</p>
+    </div>
+    <div id="source" class="source-words" hidden></div>
+    <div class="voice-controls">
+      <span id="status" class="status" role="status">Ready · 3 minute demo</span>
+      <div class="toolbar">
+        <button id="start" class="primary">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3M8 22h8"/></svg>
+          <span id="startLabel">Start talking</span>
+        </button>
+        <button id="textStart" aria-label="Translate typed words">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M6 9h.01M10 9h.01M14 9h.01M18 9h.01M6 12h.01M10 12h.01M14 12h.01M18 12h.01M7 16h10"/></svg>
+        </button>
+        <button id="pause" hidden>Pause mic</button>
+        <button id="end" hidden>End demo</button>
+        <details id="settings" class="options">
+          <summary aria-label="Interpreter settings"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="2"/><circle cx="15" cy="17" r="2"/></svg></summary>
+          <div class="option-menu">
+            <div class="mode-options" role="group" aria-label="Interpreter mode">
+              <button id="translation" aria-pressed="true">Translate</button>
+              <button id="assignment" aria-pressed="false">Assignment help</button>
+            </div>
+            <button id="fullscreen">Full screen</button>
+            <button id="share">Share demo</button>
+            <button id="bigger" aria-label="Larger captions">A+</button>
+            <button id="smaller" aria-label="Smaller captions">A−</button>
+            <label><input id="showOriginal" type="checkbox"> Show original words</label>
+            <label><input id="speak" type="checkbox" checked> Speak translations</label>
+            <small class="menu-note">Automatic English ↔ Español.<br>Speak naturally. One person at a time.</small>
+            <small class="menu-note">Recorded demo · 7-day retention.<br>Use fictional examples.</small>
+          </div>
+        </details>
+      </div>
+    </div>
+    <form id="form" class="composer" hidden>
+      <input id="input" aria-label="Words to translate" placeholder="English or Spanish…" maxlength="2000" autocomplete="off">
+      <button id="send">Translate</button>
+    </form>
+    <p id="error" role="alert"></p>
+  </section>
+  <button id="launcher" aria-label="Open interpreter" aria-expanded="false" aria-controls="widget">
+    <span class="halo" aria-hidden="true"></span>
+    <span class="logo-mark" aria-hidden="true"><img src="./assets/changing-tides-logo.jpg" alt=""></span>
+  </button>
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>
